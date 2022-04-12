@@ -36,6 +36,7 @@ public class PaypalService {
         amount.setTotal(String.format("%.2f", total));
 
         Transaction transaction = new Transaction();
+        transaction.setDescription("OPIS");
         transaction.setAmount(amount);
 
         List<Transaction> transactions = new ArrayList<>();
